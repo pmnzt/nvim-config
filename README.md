@@ -1,3 +1,4 @@
 # neovim-windows
 root: ~AppData/local/nvim
-pulgins folder: plugged
+
+pulgins folder: autoload/plugged
