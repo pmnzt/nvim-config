@@ -1,9 +1,9 @@
 set relativenumber
-set mouse=a
 call plug#begin('~\AppData\Local\nvim\autoload\plugged')
 Plug 'https://github.com/scrooloose/nerdtree'
 Plug 'https://github.com/morhetz/gruvbox'
 Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
+Plug 'https://github.com/tyrannicaltoucan/vim-quantum'
 
 Plug 'https://github.com/nvim-lua/plenary.nvim'
 Plug 'https://github.com/nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
@@ -14,19 +14,19 @@ Plug 'https://github.com/pangloss/vim-javascript'
 
 call plug#end()
 
+let g:mapleader=" "
 " Find files using Telescope command-line sugar.
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
-" Using Lua functions
-nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
-nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
-nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
-nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 
-
+" Disable arrow keys in normal mode
+nnoremap <up> <nope>
+nnoremap <down> <nope>
+nnoremap <left> <nope>
+nnoremap <right> <nope>
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
@@ -178,4 +178,9 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+" set background=dark
+" set termguicolors
 colorscheme gruvbox
+
+set laststatus=2
+set statusline=%f
