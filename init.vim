@@ -3,7 +3,6 @@ call plug#begin('~\AppData\Local\nvim\autoload\plugged')
 Plug 'https://github.com/scrooloose/nerdtree'
 Plug 'https://github.com/morhetz/gruvbox'
 Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
-Plug 'https://github.com/tyrannicaltoucan/vim-quantum'
 
 Plug 'https://github.com/nvim-lua/plenary.nvim'
 Plug 'https://github.com/nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
@@ -178,8 +177,6 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-" set background=dark
-" set termguicolors
 colorscheme gruvbox
 
 set laststatus=2
