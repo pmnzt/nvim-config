@@ -1,4 +1,5 @@
 set relativenumber
+set number
 call plug#begin('~\AppData\Local\nvim\autoload\plugged')
 Plug 'https://github.com/scrooloose/nerdtree'
 Plug 'https://github.com/morhetz/gruvbox'
@@ -10,6 +11,8 @@ Plug 'https://github.com/nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
 Plug 'https://github.com/mxw/vim-jsx'
 Plug 'https://github.com/pangloss/vim-javascript'
+Plug 'https://github.com/vim-airline/vim-airline'
+Plug 'https://github.com/vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -29,6 +32,7 @@ nnoremap <right> <nope>
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
+let g:airline#extensions#tabline#enabled = 1
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
