@@ -29,6 +29,9 @@ nnoremap <up> <nope>
 nnoremap <down> <nope>
 nnoremap <left> <nope>
 nnoremap <right> <nope>
+
+nnoremap <C-t> :NERDTreeToggle<CR>
+
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
