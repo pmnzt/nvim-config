@@ -9,10 +9,11 @@ Plug 'https://github.com/nvim-lua/plenary.nvim'
 Plug 'https://github.com/nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 " or                                , { 'branch': '0.1.x' }
 
-Plug 'https://github.com/mxw/vim-jsx'
-Plug 'https://github.com/pangloss/vim-javascript'
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
+Plug 'https://github.com/scrooloose/nerdcommenter'
+Plug 'https://github.com/nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'https://github.com/sainnhe/gruvbox-material'
 
 call plug#end()
 
@@ -183,7 +184,8 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-colorscheme gruvbox
+"colorscheme gruvbox
+colorscheme gruvbox-material
 
 set laststatus=2
 set statusline=%f
