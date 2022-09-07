@@ -12,7 +12,6 @@ Plug 'https://github.com/nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
 Plug 'https://github.com/scrooloose/nerdcommenter'
-Plug 'https://github.com/nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'https://github.com/sainnhe/gruvbox-material'
 
 call plug#end()
