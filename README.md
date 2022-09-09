@@ -1,4 +1,4 @@
-## This is my [neovim](https://github.com/neovim/neovim) configraution dot files.
+## This is my [neovim](https://github.com/neovim/neovim) configraution.
 
 # neovim-windows
 root: ~AppData/local/nvim
