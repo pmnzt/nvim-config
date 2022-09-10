@@ -5,4 +5,4 @@ root: ~AppData/local/nvim
 
 pulgins folder: autoload/plugged
 
-Also you can check out the full lua config > [dofiles](https://github.com/pmnzt/dofiles)
+Also you can check out the full lua config > [dotfiles](https://github.com/pmnzt/dotfiles)
